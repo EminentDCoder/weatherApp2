@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+
+    <!-- CSS LINK -->
+     <link rel="stylesheet" href="style.css">
+
+     <!-- FAVICON LINK -->
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+     <!-- BOXICON LINKS -->
+     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> 
+     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> -->
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous"> -->
+
+     <script src="https://use.fontawesome.com/ee63039ecc.js"></script>
+
+</head>
+<body>
+    <div class="container landing-box">
+        <div class="landing-page">
+            <div class="app-top-bar">
+                <!-- <button class="button button-small">
+                    <i class="fa fa-chevron-left"></i>
+                </button> -->
+                <h1 class="app-heading"> Weather App </h1>
+                <!-- <button class="button button-small" id="toggler">
+                    <i class="fa fa-light fa-moon-o" id="toggler-icon"></i>
+                </button> -->
+            </div> 
+
+            <section class="input-part">
+                <p class="info-text"> Please enter a valid city</p>
+                <input type="text" name="" id="" placeholder="Enter city name" spellcheck="false" required>
+                <div class="separator"> </div>
+                <button> Get Device Location </button>
+            </section>
+        </div>
+    </div>
+
+    <div class="container app-box" id="app-box">
+        <div class="app-container" id="contain" data-theme="light">
+            <div class="app-top-bar">
+                <button class="button button-small back">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <h1 class="app-heading" id="name">  </h1>
+                <button class="button button-small" id="toggler">
+                    <i class="fa fa-light fa-moon-o" id="toggler-icon"></i>
+                </button>
+            </div> 
+
+
+
+
+            <div class="app-content">
+                <button class="button button-block">
+                    <span class="subtle">Period </span>
+                    <span> Today </span>
+                    <div class="buttonn button-small">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </button>
+
+                    <div class="button button-dial">
+                        <span class="button-dial-spoke"></span>
+                        <span class="button-dial-spoke"></span>
+                        <span class="button-dial-spoke"></span>
+                        <span class="button-dial-spoke"></span>
+                        <span class="button-dial-spoke"></span>
+                        <span class="button-dial-spoke"></span>
+
+                        <div class="button-dial-top"></div>
+                        <div class="button-dial-label">
+                            <i class="fa fa-light fa-thermometer-empty"></i>
+                            <span> </span><!-- 27&deg;C -->
+                        </div>
+                    </div>
+                      
+                    <div class="flex-button-container">
+                            <button class="button button-large humidity">
+                                <i class="fa fa-light fa-cloud fa-2xl" style="color:cadetblue; font-size: 2rem; "></i>
+                                <span> </span><!-- 13% -->
+                             </button>
+                            <button class="button button-large wind">
+                                <i class="fa fa-light fa-stumbleupon fa-2xl" style="color: #49e749; font-size: 2rem;" id="wind"></i>
+                                <span></span><!-- 6 km/h -->
+                            </button>
+                           
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+<script src="app.js"></script>
+</body>
+</html>
